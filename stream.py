@@ -53,9 +53,9 @@ document.write('document test');      // document test
 document.write('<H1>TEST H1</H1>');   // 진한 TEST H1
 var title = 'template literal'
 document.write(title);                // template literal 출력
-document.write(` <H2>${title}</H2> `);           // 진한 template literal
+document.write(`<H2>${title}</H2>`);           // 진한 template literal
 document.write('${title}');           // ${title} 출력
-document.write(` nothing `);  
+document.write(`nothing`);  
 
 """
 
