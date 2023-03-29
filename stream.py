@@ -50,8 +50,8 @@ st.markdown(html_body, unsafe_allow_html=True)
 ## javascript 넣기
 my_script = """
 var title = 'template literal'
-document.write(title);
 document.write('<H2>H2</H2>');
+document.write(`<H2>${title}</H2>`);
 document.write(`<H2>${title}</H2>`);
 """
 
@@ -62,6 +62,7 @@ my_js = f"<script>{my_script}</script>"
 st.title("Javascript example")
 html(my_js)
 
+#document.write(title);
 #document.write(`<H2>${title}</H2>`);
 #document.write(`${title}`);
 #document.write(`${title}`);
