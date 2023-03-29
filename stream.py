@@ -53,6 +53,8 @@ my_script = """
 var title = 'template literal'
 document.write(title);
 document.write('<H2>H2</H2>');
+document.write(`${title}`);
+document.write(`<H2>${title}</H2>`);
 
 """
 
