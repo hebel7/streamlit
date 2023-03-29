@@ -56,6 +56,7 @@ var title = 'template literal title'
 document.write(title);
 document.write(`${title}`);
 document.write(`<H2>${title}</H2>`);
+document.write('<H2>${title}</H2>');
 """
 
 # Wrapt the javascript as html code
