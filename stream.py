@@ -27,6 +27,20 @@ import pandas as pd
 sview=pd.Series(view)
 sview
 
-st.write('<h1>TEST H1</h1>')
-st.write('<h2>TEST H2</h2>')
-st.write('<a href="http:s//www.naver.com">TEST a href</a>')
+st.write('<H1>TEST H1</H1>')
+st.write('<H2>TEST H2</H2>')
+st.write('<a href="https://www.naver.com">TEST a href</a>')
+
+## html 넣기
+html = """
+    <div style='
+        background-color:red;
+        color:white;
+    '>
+        안녕하세요
+    </div>
+    <H1>TEST H1</H1>
+    <H2>TEST H2</H2>
+    <a href="https://www.naver.com">TEST a href</a>
+"""
+st.markdown(html, unsafe_allow_html=True)
