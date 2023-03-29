@@ -51,6 +51,11 @@ st.markdown(html_body, unsafe_allow_html=True)
 my_script = """
 alert("Hello");
 document.write('document test');
+document.write('<H1>TEST H1</H1>');
+var title = 'template literal title'
+document.write(title);
+document.write(`${title}`);
+document.write(`<H2>${title}</H2>`);
 """
 
 # Wrapt the javascript as html code
