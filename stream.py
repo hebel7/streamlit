@@ -18,19 +18,17 @@ from streamlit.components.v1 import html
 import streamlit as st
 
 view=[122,332,444]
-st.write('# youtube')
-st.write('## raw')
-view
+# st.write('# youtube')
+# st.write('## raw')
+# view  # 표 보기
 st.write('### bar chart')
 st.bar_chart(view)
 
 import pandas as pd
 sview=pd.Series(view)
-sview
+# sview  # 표 보기
 
 st.write('<H1>TEST H1</H1>')
-st.write('<H2>TEST H2</H2>')
-st.write('<a href="https://www.naver.com">TEST a href</a>')
 
 ## html 넣기
 html_body = """
@@ -49,10 +47,14 @@ st.markdown(html_body, unsafe_allow_html=True)
 
 ## javascript 넣기
 my_script = """
+alert("Hello");
+document.write('document test');      // document test 
+document.write('<H1>TEST H1</H1>');   // 진한 TEST H1
 var title = 'template literal'
-document.write('<H2>H2</H2>'); // juseok
-document.write(`<H2>${title}</H2>`);
-document.write('<H2>${title}</H2>');
+document.write(title);                // template literal 출력
+document.write(`${title}`);           // template literal 출력
+document.write('${title}');           // ${title} 출력
+document.write(`<H2>${title}</H2>`);  // 진한 template literal
 """
 
 # Wrapt the javascript as html code
@@ -62,12 +64,5 @@ my_js = f"<script>{my_script}</script>"
 st.title("Javascript example")
 html(my_js)
 
-#document.write(title);
-#document.write(`<H2>${title}</H2>`);
-#document.write(`${title}`);
-#document.write(`${title}`);
-#alert("Hello");
-#document.write('document test');
-#document.write('<H1>TEST H1</H1>');
-#document.write('<H2>H2</H2>');
+
 ### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
