@@ -52,9 +52,10 @@ my_script = """
 alert("Hello");
 document.write('document test');
 document.write('<H1>TEST H1</H1>');
-var title = 'template literal title'
+document.write('<H2>H2</H2>');
+var title = 'template literal'
 document.write(title);
-document.write('<H1>tit</H1>');
+document.write('<H2>H2</H2>');
 
 """
 
