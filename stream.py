@@ -10,6 +10,10 @@
 # Local URL: http://localhost:8501
 # Network URL: http://192.168.0.20:8501
 
+### 내 홈피 ###
+### tmfuture.streamlit.app
+### github의 streamlit (repository)에 stream.py 파일 업데이트 하면 됨. 
+
 import streamlit as st
 
 view=[122,332,444]
@@ -22,3 +26,7 @@ st.bar_chart(view)
 import pandas as pd
 sview=pd.Series(view)
 sview
+
+st.write('<H1>TEST H1</H1>')
+st.write('<H2>TEST H2</H2>')
+st.write('<a href="http:s//www.naver.com>TEST a href</a>')
