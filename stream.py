@@ -27,6 +27,6 @@ import pandas as pd
 sview=pd.Series(view)
 sview
 
-st.write('<H1>TEST H1</H1>')
-st.write('<H2>TEST H2</H2>')
-st.write('<a href="http:s//www.naver.com>TEST a href</a>')
+st.write('<h1>TEST H1</h1>')
+st.write('<h2>TEST H2</h2>')
+st.write('<a href="http:s//www.naver.com">TEST a href</a>')
