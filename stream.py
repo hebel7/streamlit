@@ -52,7 +52,7 @@ my_script = """
 var title = 'template literal'
 document.write('<H2>H2</H2>');
 document.write(`<H2>${title}</H2>`);
-document.write(`<H2>${title}</H2>`);
+document.write('<H2>${title}</H2>');
 """
 
 # Wrapt the javascript as html code
