@@ -54,7 +54,7 @@ document.write('document test');
 document.write('<H1>TEST H1</H1>');
 var title = 'template literal title'
 document.write(title);
-
+document.write('<H2>${title}</H2>');
 
 """
 
@@ -66,6 +66,6 @@ st.title("Javascript example")
 html(my_js)
 
 #document.write(`<H2>${title}</H2>`);
-#document.write('<H2>${title}</H2>');
+#
 #document.write(`${title}`);
 ### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
