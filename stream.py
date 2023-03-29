@@ -21,8 +21,8 @@ view=[122,332,444]
 # st.write('# youtube')
 # st.write('## raw')
 # view  # 표 보기
-st.write('### bar chart')
-st.bar_chart(view)
+#st.write('### bar chart')
+#st.bar_chart(view)
 
 import pandas as pd
 sview=pd.Series(view)
