@@ -49,10 +49,7 @@ st.markdown(html_body, unsafe_allow_html=True)
 
 ## javascript 넣기
 my_script = """
-alert("Hello");
-document.write('document test');
-document.write('<H1>TEST H1</H1>');
-document.write('<H2>H2</H2>');
+
 var title = 'template literal'
 document.write(title);
 document.write('<H2>H2</H2>');
@@ -69,4 +66,8 @@ html(my_js)
 #document.write(`<H2>${title}</H2>`);
 #
 #document.write(`${title}`);
+#alert("Hello");
+#document.write('document test');
+#document.write('<H1>TEST H1</H1>');
+#document.write('<H2>H2</H2>');
 ### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
