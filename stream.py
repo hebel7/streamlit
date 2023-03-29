@@ -5,7 +5,7 @@
 ## pip install streamlit==0.62   //0.62버전 설치
 ## streamlit hello               //설치확인
 ## ctrl + C                      //종료
-## streamlit run stream.py       //파일 실행
+## streamlit run ./streamlit/stream.py       //파일 실행
 
 # Local URL: http://localhost:8501
 # Network URL: http://192.168.0.20:8501
@@ -14,6 +14,7 @@
 ### tmfuture.streamlit.app
 ### github의 streamlit (repository)에 stream.py 파일 업데이트 하면 됨. 
 
+from streamlit.components.v1 import html
 import streamlit as st
 
 view=[122,332,444]
@@ -32,7 +33,7 @@ st.write('<H2>TEST H2</H2>')
 st.write('<a href="https://www.naver.com">TEST a href</a>')
 
 ## html 넣기
-html = """
+html_body = """
     <div style='
         background-color:red;
         color:white;
@@ -43,4 +44,17 @@ html = """
     <H2>TEST H2</H2>
     <a href="https://www.naver.com">TEST a href</a>
 """
-st.markdown(html, unsafe_allow_html=True)
+st.markdown(html_body, unsafe_allow_html=True)
+
+my_script = """
+alert("Hello");
+"""
+
+# Wrapt the javascript as html code
+my_js = f"<script>{my_script}</script>"
+
+# Execute your app
+st.title("Javascript example")
+html(my_js)
+
+### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
