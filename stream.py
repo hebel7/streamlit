@@ -46,8 +46,11 @@ html_body = """
 """
 st.markdown(html_body, unsafe_allow_html=True)
 
+
+## javascript 넣기
 my_script = """
 alert("Hello");
+document.write('document test');
 """
 
 # Wrapt the javascript as html code
@@ -56,5 +59,6 @@ my_js = f"<script>{my_script}</script>"
 # Execute your app
 st.title("Javascript example")
 html(my_js)
+
 
 ### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
