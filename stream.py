@@ -53,7 +53,7 @@ document.write('document test');      // document test
 document.write('<H1>TEST H1</H1>');   // 진한 TEST H1
 var title = 'template literal'
 document.write(title);                // template literal 출력
-document.write(`<H2>${title}</H2>`);           // 진한 template literal
+
 document.write('${title}');           // ${title} 출력
 document.write(`nothing`);  
 
@@ -66,5 +66,6 @@ my_js = f"<script>{my_script}</script>"
 st.title("Javascript example")
 html(my_js)
 
+#document.write(`<H2>${title}</H2>`);           // 진한 template literal
 
 ### github의 streamlit (repository)에 stream.py 파일에 복사해서 붙여넣기하고 커밋하면 됨.
